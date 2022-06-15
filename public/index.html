@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>TicTacToe by koneko</title>
+</head>
+<body>
+        <div>
+            <div class="state"></div>
+            <div class="current"></div>
+        </div>
+        <table>
+            <tr id="top">
+                <td id="top-left">T</td>
+                <td id="top-middle">I</td>
+                <td id="top-right">C</td>
+            </tr>
+            <tr id="middle">
+                <td id="middle-left">T</td>
+                <td id="middle-middle">A</td>
+                <td id="middle-right">C</td>
+            </tr>
+            <tr id="bottom">
+                <td id="bottom-left">T</td>
+                <td id="bottom-middle">O</td>
+                <td id="bottom-right">E</td>
+            </tr>
+        </table>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/room.js"></script>
+<script src="/game.js"></script>
+</html>
