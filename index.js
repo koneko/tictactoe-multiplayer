@@ -5,7 +5,21 @@ const port = process.env.PORT || 3000;
 
 let rooms = []
 
-app.use(express.static('public'));
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/main.html");
+})
+
+app.get("/game", (req, res) => {
+    res.sendFile(__dirname + "/public/index.html")
+})
+
+app.get("/style.css", (req, res) => {
+    res.sendFile(__dirname + "/public/style.css")
+})
+
+app.get("/game.js", (req, res) => {
+    res.sendFile(__dirname + "/public/game.js")
+})
 
 let server = app.listen(port, () => console.log("TicTacToe server listening on port " + port))
 const io = new Server(server);

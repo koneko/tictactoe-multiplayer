@@ -12,7 +12,7 @@ else joinRoom(room)
 function createRoom () {
     let room = Math.floor(Math.random() * (94323344234123 - 12544523)) + 12544523;
     room = room.toString().replace(/4/g, 'v').replace(/1/g, 't').replace(/6/g, 'h').replace(/8/g, 'c')
-    window.location.href = `/?id=${room}`
+    window.location.href = `/game?id=${room}`
 }
 
 function joinRoom (room) {
@@ -116,11 +116,11 @@ socket.on("winner", data => {
         window.location.reload()
     } else {
         alert("Thanks for playing!")
-        window.location.href = "/"
+        window.location.href = "/game"
     }
 })
 
 socket.on("leave", () => {
     alert("Other player left the room. Reseting.")
-    window.location.href = "/"
+    window.location.href = "/game"
 })

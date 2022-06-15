@@ -6,7 +6,7 @@ html,body {
 }
 
 body {
-    background-color: rgb(0, 0, 20);
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -15,22 +15,44 @@ body {
 }
 
 table {
-    width: 50%;
-    height: 50%;
+    border-collapse: separate;
+    border-spacing: 5px;
 }
 
 td {
     border: 1px solid white;
     font-size: 1.5em;
-    color: white;
+    color: black;
+    background-color:white;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
-    padding: 0.5em;
-    width: 3em;
-    height: 3em;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
+    font-family: 'Pacifico';
+    border-radius: 5px;
 }
 
 div.state, div.current {
     color: white;
     font-size: 40px;
+    font-family: 'Pacifico';
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Pacifico';
+}
+
+button {
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    font-size: 1.5em;
+    font-family: 'Pacifico';
+    cursor: pointer; 
 }
