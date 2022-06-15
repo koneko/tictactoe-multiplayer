@@ -12,25 +12,24 @@
             <div class="state"></div>
             <div class="current"></div>
         </div>
-        <table>
+        <table class="board">
             <tr id="top">
-                <td id="top-left">T</td>
-                <td id="top-middle">I</td>
-                <td id="top-right">C</td>
+                <td id="top-left" onclick="javscript:sendInput(this)">T</td>
+                <td id="top-middle" onclick="javscript:sendInput(this)">I</td>
+                <td id="top-right" onclick="javscript:sendInput(this)">C</td>
             </tr>
             <tr id="middle">
-                <td id="middle-left">T</td>
-                <td id="middle-middle">A</td>
-                <td id="middle-right">C</td>
+                <td id="middle-left" onclick="javscript:sendInput(this)">T</td>
+                <td id="middle-middle" onclick="javscript:sendInput(this)">A</td>
+                <td id="middle-right" onclick="javscript:sendInput(this)">C</td>
             </tr>
             <tr id="bottom">
-                <td id="bottom-left">T</td>
-                <td id="bottom-middle">O</td>
-                <td id="bottom-right">E</td>
+                <td id="bottom-left" onclick="javscript:sendInput(this)">T</td>
+                <td id="bottom-middle" onclick="javscript:sendInput(this)">O</td>
+                <td id="bottom-right" onclick="javscript:sendInput(this)">E</td>
             </tr>
         </table>
 </body>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/room.js"></script>
 <script src="/game.js"></script>
 </html>
